@@ -1,0 +1,520 @@
+#/home/clint/Dropbox/PhD/Lab/ecoli_factors_incP/manuscript/statistics/stabilityToolkit/stability_toolkit_analysis.r
+
+> print("simpleSSfit_anc")
+[1] "simpleSSfit_anc"
+> simpleSSfit_anc$mles.cis
+      Initial fraction  Segregation         Cost
+2.5%         0.1983040 9.202368e-07 3.717772e-08
+MLE          0.2581667 1.107502e-02 1.835435e-02
+97.5%        0.3168729 1.976638e-02 4.596828e-02
+> simpleSSfit_anc$BIC
+[1] 188.0641
+> 
+> print("simpleHTfit_anc")
+[1] "simpleHTfit_anc"
+> simpleHTfit_anc$mles.cis
+      Initial fraction   Segregation         Cost     M-M cst.  Conjugation
+2.5%         0.2013395 2.700085e-116 7.538544e-07 7.458662e-08 1.814869e-15
+MLE          0.2584996  1.056856e-02 2.294476e-02 9.999895e-01 3.062191e-03
+97.5%        0.3167571  2.042553e-02 1.494454e-01 1.000000e+00 9.120762e-02
+> simpleHTfit_anc$BIC
+[1] 195.0581
+> 
+> print("simpleSSfit_EvoA")
+[1] "simpleSSfit_EvoA"
+> simpleSSfit_evoA$mles.cis
+      Initial fraction  Segregation         Cost
+2.5%       0.008903922 7.252988e-08 1.254422e-07
+MLE        0.032088125 1.142375e-03 1.830009e-02
+97.5%      0.048754522 2.825685e-03 3.507667e-02
+> simpleSSfit_evoA$BIC
+[1] 161.5717
+> 
+> print("simpleHTfit_EvoA")
+[1] "simpleHTfit_EvoA"
+> simpleHTfit_evoA$mles.cis
+      Initial fraction  Segregation       Cost     M-M cst.  Conjugation
+2.5%        0.01479545 0.000000e+00 0.03304677 7.688716e-06 0.0002390003
+MLE         0.03155130 0.000000e+00 0.17956460 1.150460e-01 0.0928144286
+97.5%       0.04887120 2.504277e-09 0.47405076 1.000000e+00 0.4091066495
+> simpleHTfit_evoA$BIC
+[1] 166.8183
+> 
+> print("simpleSSfit_EvoB")
+[1] "simpleSSfit_EvoB"
+> simpleSSfit_evoB$mles.cis
+      Initial fraction  Segregation        Cost
+2.5%     1.352103e-185 4.750083e-12 0.007998952
+MLE       3.435840e-03 1.330479e-05 0.045019611
+97.5%     7.178883e-03 4.282031e-04 0.061497747
+> simpleSSfit_evoB$BIC
+[1] 91.89738
+> 
+> print("simpleHTfit_EvoB")
+[1] "simpleHTfit_EvoB"
+> simpleHTfit_evoB$mles.cis
+      Initial fraction  Segregation       Cost M-M cst.  Conjugation
+2.5%       0.001037786 9.984943e-88 0.03059651        1 3.047290e-06
+MLE        0.003520938 4.321978e-88 0.04640310        1 8.247199e-05
+97.5%      0.007783547 1.353703e-61 0.06786406        1 3.005476e-04
+> simpleHTfit_evoB$BIC
+[1] 98.86326
+> 
+> print("simpleSSfit_EvoC")
+[1] "simpleSSfit_EvoC"
+> simpleSSfit_evoC$mles.cis
+      Initial fraction  Segregation         Cost
+2.5%      3.961099e-97 5.314701e-05 3.553184e-07
+MLE       2.983398e-18 1.879776e-04 4.241343e-02
+97.5%     1.377311e-04 7.073728e-04 6.925192e-02
+> simpleSSfit_evoC$BIC
+[1] 95.34525
+> 
+> print("simpleHTfit_EvoC")
+[1] "simpleHTfit_EvoC"
+> simpleHTfit_evoC$mles.cis
+      Initial fraction  Segregation       Cost  M-M cst.  Conjugation
+2.5%      0.000000e+00 4.080613e-05 0.02167725 0.3758353 1.122827e-08
+MLE      1.209355e-118 1.879710e-04 0.04266776 1.0000000 3.424293e-04
+97.5%     1.252654e-06 3.884253e-04 1.08150578 1.0000000 9.914117e-01
+> simpleHTfit_evoC$BIC
+[1] 102.3386
+> 
+> print('comb.SSfit_anc_evoA')
+[1] "comb.SSfit_anc_evoA"
+> comb.SSfit_anc_evoA
+$names.pars
+[1] "Beta0 (initial frac.)" "lambda (segregation)"  "sigma (cost)"         
+
+$mls1
+Initial fraction      Segregation             Cost 
+      0.25814153       0.01107851       0.01834376 
+
+$mls2
+Initial fraction      Segregation             Cost 
+      0.03210669       0.00114509       0.01825804 
+
+$joint.mls
+Initial fraction      Segregation             Cost 
+    0.1441466474     0.0070810908     0.0001077547 
+
+$nll1
+[1] 88.78731
+
+$nll2
+[1] 75.54111
+
+$joint.nll
+[1] 698.1086
+
+$BIC.SS.data1
+[1] 188.0641
+
+$BIC.SS.data2
+[1] 161.5717
+
+$BIC.sep
+[1] 353.7948
+
+$BIC.joint
+[1] 1408.786
+
+$Best.model
+[1] "The 2 data sets have different dynamics"
+
+> 
+> print('comb.SSfit_anc_evoB')
+[1] "comb.SSfit_anc_evoB"
+> comb.SSfit_anc_evoB 
+$names.pars
+[1] "Beta0 (initial frac.)" "lambda (segregation)"  "sigma (cost)"         
+
+$mls1
+Initial fraction      Segregation             Cost 
+      0.25814153       0.01107851       0.01834376 
+
+$mls2
+Initial fraction      Segregation             Cost 
+    3.524071e-03     1.153766e-08     4.633481e-02 
+
+$joint.mls
+Initial fraction      Segregation             Cost 
+    1.369074e-01     5.272588e-03     3.685683e-07 
+
+$nll1
+[1] 88.78731
+
+$nll2
+[1] 40.69037
+
+$joint.nll
+[1] 1046.461
+
+$BIC.SS.data1
+[1] 188.0641
+
+$BIC.SS.data2
+[1] 91.87026
+
+$BIC.sep
+[1] 284.0933
+
+$BIC.joint
+[1] 2105.491
+
+$Best.model
+[1] "The 2 data sets have different dynamics"
+
+> 
+> print('comb.SSfit_anc_evoC')
+[1] "comb.SSfit_anc_evoC"
+> comb.SSfit_anc_evoC
+$names.pars
+[1] "Beta0 (initial frac.)" "lambda (segregation)"  "sigma (cost)"         
+
+$mls1
+Initial fraction      Segregation             Cost 
+      0.25814153       0.01107851       0.01834376 
+
+$mls2
+Initial fraction      Segregation             Cost 
+    0.0009496308     0.0001289361     0.0460530563 
+
+$joint.mls
+Initial fraction      Segregation             Cost 
+    1.338611e-01     5.449230e-03     1.240141e-06 
+
+$nll1
+[1] 88.78731
+
+$nll2
+[1] 42.41219
+
+$joint.nll
+[1] 1023.688
+
+$BIC.SS.data1
+[1] 188.0641
+
+$BIC.SS.data2
+[1] 95.3139
+
+$BIC.sep
+[1] 287.5369
+
+$BIC.joint
+[1] 2059.945
+
+$Best.model
+[1] "The 2 data sets have different dynamics"
+
+> 
+> print('SSfit_evoA_evoB')
+[1] "SSfit_evoA_evoB"
+> comb.SSfit_evoA_evoB
+$names.pars
+[1] "Beta0 (initial frac.)" "lambda (segregation)"  "sigma (cost)"         
+
+$mls1
+Initial fraction      Segregation             Cost 
+     0.032093414      0.001142196      0.018300639 
+
+$mls2
+Initial fraction      Segregation             Cost 
+    3.519881e-03     1.117255e-09     4.635235e-02 
+
+$joint.mls
+Initial fraction      Segregation             Cost 
+    0.0179642656     0.0005027909     0.0223596287 
+
+$nll1
+[1] 75.54109
+
+$nll2
+[1] 40.69036
+
+$joint.nll
+[1] 197.2333
+
+$BIC.SS.data1
+[1] 161.5717
+
+$BIC.SS.data2
+[1] 91.87023
+
+$BIC.sep
+[1] 257.6008
+
+$BIC.joint
+[1] 407.0356
+
+$Best.model
+[1] "The 2 data sets have different dynamics"
+
+> 
+> print('SSfit_evoA_evoC')
+[1] "SSfit_evoA_evoC"
+> comb.SSfit_evoA_evoC
+$names.pars
+[1] "Beta0 (initial frac.)" "lambda (segregation)"  "sigma (cost)"         
+
+$mls1
+Initial fraction      Segregation             Cost 
+     0.032093414      0.001142196      0.018300639 
+
+$mls2
+Initial fraction      Segregation             Cost 
+    0.0009724467     0.0001275721     0.0460914280 
+
+$joint.mls
+Initial fraction      Segregation             Cost 
+     0.017285344      0.000467155      0.024971541 
+
+$nll1
+[1] 75.54109
+
+$nll2
+[1] 42.41211
+
+$joint.nll
+[1] 189.96
+
+$BIC.SS.data1
+[1] 161.5717
+
+$BIC.SS.data2
+[1] 95.31373
+
+$BIC.sep
+[1] 261.0443
+
+$BIC.joint
+[1] 392.4889
+
+$Best.model
+[1] "The 2 data sets have different dynamics"
+
+> 
+> print('comb.SSfit_evoB_evoC')
+[1] "comb.SSfit_evoB_evoC"
+> comb.SSfit_evoB_evoC
+$names.pars
+[1] "Beta0 (initial frac.)" "lambda (segregation)"  "sigma (cost)"         
+
+$mls1
+Initial fraction      Segregation             Cost 
+    3.519593e-03     3.518421e-10     4.635045e-02 
+
+$mls2
+Initial fraction      Segregation             Cost 
+    0.0009689401     0.0001278863     0.0460670550 
+
+$joint.mls
+Initial fraction      Segregation             Cost 
+    3.054965e-03     6.967102e-06     5.002870e-02 
+
+$nll1
+[1] 40.69035
+
+$nll2
+[1] 42.41211
+
+$joint.nll
+[1] 83.90265
+
+$BIC.SS.data1
+[1] 91.87023
+
+$BIC.SS.data2
+[1] 95.31373
+
+$BIC.sep
+[1] 191.3429
+
+$BIC.joint
+[1] 180.3743
+
+$Best.model
+[1] "The 2 data sets have the same dynamics"
+
+> 
+> print('comb.HTfit_anc_evoA')
+[1] "comb.HTfit_anc_evoA"
+> comb.HTfit_anc_evoA
+$names.pars
+[1] "Beta0 (initial frac.)" "lambda (segregation)"  "sigma (cost)"         
+[4] "theta (HT-cst)"        "gamma (HT prob.)"     
+
+$mls1
+Initial fraction      Segregation             Cost         M-M cst.      Conjugation 
+    0.2582567941     0.0109253567     0.0197244820     1.0000000000     0.0009185504 
+
+$mls2
+Initial fraction      Segregation             Cost         M-M cst.      Conjugation 
+    0.0372838154     0.0004485226     0.1458111745     0.9999999895     0.1477460263 
+
+$joint.mls
+Initial fraction      Segregation             Cost         M-M cst.      Conjugation 
+     0.143251989      0.006373911      0.026294662      0.999991970      0.025429325 
+
+$nll1
+[1] 88.7874
+
+$nll2
+[1] 75.24125
+
+$joint.nll
+[1] 697.9892
+
+$BIC.HT.data1
+[1] 188.0643
+
+$BIC.HT.data2
+[1] 160.972
+
+$BIC.sep
+[1] 369.9539
+
+$BIC.joint
+[1] 1416.927
+
+$Best.model
+[1] "The 2 data sets have different dynamics"
+
+> 
+> print('comb.HTfit_anc_evoB')
+[1] "comb.HTfit_anc_evoB"
+> comb.HTfit_anc_evoB 
+$names.pars
+[1] "Beta0 (initial frac.)" "lambda (segregation)"  "sigma (cost)"         
+[4] "theta (HT-cst)"        "gamma (HT prob.)"     
+
+$mls1
+Initial fraction      Segregation             Cost         M-M cst.      Conjugation 
+    0.2582567941     0.0109253567     0.0197244820     1.0000000000     0.0009185504 
+
+$mls2
+Initial fraction      Segregation             Cost         M-M cst.      Conjugation 
+    3.248852e-03     1.494203e-05     1.166636e-01     9.999997e-01     9.508605e-02 
+
+$joint.mls
+Initial fraction      Segregation             Cost         M-M cst.      Conjugation 
+     0.127971250      0.006533352      0.017619580      0.999999061      0.026759773 
+
+$nll1
+[1] 88.7874
+
+$nll2
+[1] 40.71696
+
+$joint.nll
+[1] 1046.041
+
+$BIC.HT.data1
+[1] 188.0643
+
+$BIC.HT.data2
+[1] 91.92344
+
+$BIC.sep
+[1] 300.9053
+
+$BIC.joint
+[1] 2113.031
+
+$Best.model
+[1] "The 2 data sets have different dynamics"
+
+> 
+> print('comb.HTfit_anc_evoC')
+[1] "comb.HTfit_anc_evoC"
+> comb.HTfit_anc_evoC
+$names.pars
+[1] "Beta0 (initial frac.)" "lambda (segregation)"  "sigma (cost)"         
+[4] "theta (HT-cst)"        "gamma (HT prob.)"     
+
+$mls1
+Initial fraction      Segregation             Cost         M-M cst.      Conjugation 
+    0.2582567941     0.0109253567     0.0197244820     1.0000000000     0.0009185504 
+
+$mls2
+Initial fraction      Segregation             Cost         M-M cst.      Conjugation 
+    7.520354e-09     1.881587e-04     4.238293e-02     9.999999e-01     1.921738e-06 
+
+$joint.mls
+Initial fraction      Segregation             Cost         M-M cst.      Conjugation 
+     0.127800018      0.006223705      0.014556573      0.999999653      0.020658888 
+
+$nll1
+[1] 88.7874
+
+$nll2
+[1] 42.42787
+
+$joint.nll
+[1] 1023.493
+
+$BIC.HT.data1
+[1] 188.0643
+
+$BIC.HT.data2
+[1] 95.34526
+
+$BIC.sep
+[1] 304.3271
+
+$BIC.joint
+[1] 2067.934
+
+$Best.model
+[1] "The 2 data sets have different dynamics"
+
+> 
+> #print('HTfit_evoA_evoB')
+> #comb.HTfit_evoA_evoB
+> 
+> #print('HTfit_evoA_evoC')
+> #comb.HTfit_evoA_evoC
+> 
+> print('comb.HTfit_evoB_evoC')
+[1] "comb.HTfit_evoB_evoC"
+> comb.HTfit_evoB_evoC
+$names.pars
+[1] "Beta0 (initial frac.)" "lambda (segregation)"  "sigma (cost)"         
+[4] "theta (HT-cst)"        "gamma (HT prob.)"     
+
+$mls1
+Initial fraction      Segregation             Cost         M-M cst.      Conjugation 
+    3.520036e-03     1.236635e-86     4.640836e-02     1.000000e+00     8.220693e-05 
+
+$mls2
+Initial fraction      Segregation             Cost         M-M cst.      Conjugation 
+    2.840530e-03     4.794891e-86     5.435261e-02     1.000000e+00     9.260994e-05 
+
+$joint.mls
+Initial fraction      Segregation             Cost         M-M cst.      Conjugation 
+    3.146873e-03     7.555554e-87     5.058219e-02     1.000000e+00     7.726187e-05 
+
+$nll1
+[1] 40.69036
+
+$nll2
+[1] 42.48731
+
+$joint.nll
+[1] 83.90306
+
+$BIC.HT.data1
+[1] 91.87025
+
+$BIC.HT.data2
+[1] 95.46414
+
+$BIC.sep
+[1] 208.2519
+
+$BIC.joint
+[1] 188.7544
+
+$Best.model
+[1] "The 2 data sets have the same dynamics"

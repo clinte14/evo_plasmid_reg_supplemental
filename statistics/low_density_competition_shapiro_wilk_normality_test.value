@@ -1,0 +1,4 @@
+  genotype             `W Stat` p.value
+  <fct>                   <dbl>   <dbl>
+1 K-12                    0.949   0.707
+2 K-12(pBP136KmΔupf31)    0.942   0.666

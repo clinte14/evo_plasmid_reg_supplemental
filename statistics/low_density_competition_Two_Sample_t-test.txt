@@ -1,0 +1,11 @@
+t.test (CFU_per_mL ~ genotype, var.equal=TRUE, data = dat)
+	Two Sample t-test
+
+data:  CFU_per_mL by genotype
+t = 2.38, df = 6, p-value = 0.05477
+alternative hypothesis: true difference in means between group K-12 and group K-12(pBP136KmΔupf31) is not equal to 0
+95 percent confidence interval:
+  -16500.64 1189833.98
+sample estimates:
+                mean in group K-12 mean in group K-12(pBP136KmΔupf31) 
+                           1783333                            1196667 

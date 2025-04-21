@@ -1,0 +1,90 @@
+> #Import the data
+> dat<-read.csv("/home/clint/Dropbox/PhD/Lab/ecoli_factors_incP/manuscript/statistics/k12_vs_k12pbp136KmDEL_growthFit.csv")
+> 
+> #Designate genotype as a categorical factor
+> dat$genotype<-as.factor(dat$genotype)
+> 
+> #Produce descriptive statistics by group
+> dat %>% select(genotype, W) %>% group_by(genotype) %>% 
++   summarise(n = n(), 
++             mean = mean(W, na.rm = TRUE), 
++             sd = sd(W, na.rm = TRUE),
++             stderr = sd/sqrt(n),
++             LCL = mean - qt(1 - (0.05 / 2), n - 1) * stderr,
++             UCL = mean + qt(1 - (0.05 / 2), n - 1) * stderr,
++             median = median(W, na.rm = TRUE),
++             min = min(W, na.rm = TRUE), 
++             max = max(W, na.rm = TRUE),
++             IQR = IQR(W, na.rm = TRUE),
++             LCLmed = MedianCI(W, na.rm=TRUE)[2],
++             UCLmed = MedianCI(W, na.rm=TRUE)[3])
+# A tibble: 2 × 13
+  genotype       n  mean      sd  stderr    LCL   UCL median    min   max     IQR LCLmed
+  <fct>      <int> <dbl>   <dbl>   <dbl>  <dbl> <dbl>  <dbl>  <dbl> <dbl>   <dbl>  <dbl>
+1 K-12(pBP1…    10 0.105 0.0156  0.00493 0.0934 0.116  0.107 0.0813 0.128 0.0208  0.0853
+2 K-12(pBP1…    10 0.124 0.00822 0.00260 0.118  0.130  0.126 0.106  0.134 0.00963 0.119 
+# … with 1 more variable: UCLmed <dbl>
+# ℹ Use `colnames()` to see all variable names
+> 
+> #Produce Boxplots and visually check for outliers
+> ggplot(dat, aes(x = genotype, y = W, fill = genotype)) +
++   stat_boxplot(geom ="errorbar", width = 0.5) +
++   geom_boxplot(fill = "light blue") + 
++   stat_summary(fun.y=mean, geom="point", shape=10, size=3.5, color="black") + 
++   ggtitle("Boxplot of K-12 and K-12(pBP136KmΔupf31)") + 
++   theme_bw() + theme(legend.position="none")
+> 
+> #Test each group for normality
+> dat %>%
++   group_by(genotype) %>%
++   summarise(`W Stat` = shapiro.test(W)$statistic,
++             p.value = shapiro.test(W)$p.value)
+# A tibble: 2 × 3
+  genotype             `W Stat` p.value
+  <fct>                   <dbl>   <dbl>
+1 K-12(pBP136Km)          0.956   0.737
+2 K-12(pBP136KmΔupf31)    0.911   0.289
+> 
+> #Perform QQ plots by group
+> ggplot(data = dat, mapping = aes(sample = W, color = genotype, fill = genotype)) +
++   stat_qq_band(alpha=0.5, conf=0.95, qtype=1, bandType = "boot") +
++   stat_qq_line(identity=TRUE) +
++   stat_qq_point(col="black") +
++   facet_wrap(~ genotype, scales = "free") +
++   labs(x = "Theoretical Quantiles", y = "Sample Quantiles") + theme_bw()
+> 
+> #Perform the Mann-Whitney U test
+> m1<-wilcox.test(W ~ genotype, data=dat, na.rm=TRUE, paired=FALSE, exact=FALSE, conf.int=TRUE)
+> print(m1)
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  W by genotype
+W = 12, p-value = 0.004586
+alternative hypothesis: true location shift is not equal to 0
+95 percent confidence interval:
+ -0.033781471 -0.006735058
+sample estimates:
+difference in location 
+           -0.01939165 
+
+> 
+> 
+> #Hodges Lehmann Estimator
+> m1$estimate
+difference in location 
+           -0.01939165 
+> 
+> # Two sample independent T-Test
+> t.test (W ~ genotype, var.equal=TRUE, data = dat)
+
+	Two Sample t-test
+
+data:  W by genotype
+t = -3.5387, df = 18, p-value = 0.002346
+alternative hypothesis: true difference in means between group K-12(pBP136Km) and group K-12(pBP136KmΔupf31) is not equal to 0
+95 percent confidence interval:
+ -0.031445276 -0.008016536
+sample estimates:
+      mean in group K-12(pBP136Km) mean in group K-12(pBP136KmΔupf31) 
+                         0.1045341                          0.1242650 

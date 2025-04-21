@@ -1,0 +1,31 @@
+	Wilcoxon rank sum test with continuity correction
+
+data:  W by genotype
+W = 4, p-value = 0.2817
+alternative hypothesis: true location shift is not equal to 0
+95 percent confidence interval:
+ -0.12233013  0.07038137
+sample estimates:
+difference in location 
+           -0.02597438 
+
+> 
+> 
+> #Hodges Lehmann Estimator
+> m1$estimate
+difference in location 
+           -0.02597438 
+> 
+> # Two sample independent T-Test
+> t.test (W ~ genotype, var.equal=TRUE, data = dat)
+
+	Two Sample t-test
+
+data:  W by genotype
+t = -0.89683, df = 6, p-value = 0.4044
+alternative hypothesis: true difference in means between group K-12 and group K-12(pBP136KmΔupf31) is not equal to 0
+95 percent confidence interval:
+ -0.1424913  0.0660554
+sample estimates:
+                mean in group K-12 mean in group K-12(pBP136KmΔupf31) 
+                          1.000000                           1.038218 
