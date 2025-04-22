@@ -1,0 +1,203 @@
+LOCUS       pGCMTupf31p             4999 bp    DNA     circular UNA 08-FEB-2024
+DEFINITION  .
+ACCESSION   urn.local...z-hemxwj7
+VERSION     urn.local...z-hemxwj7
+KEYWORDS    .
+SOURCE      
+  ORGANISM  .
+FEATURES             Location/Qualifiers
+     source          1..2905
+                     /db_xref="taxon:65736"
+                     /host="Escherichia coli"
+                     /mol_type="other DNA"
+                     /organism="Cloning vector pWSK29"
+     misc_feature    1..2905
+                     /note="similar to pSC101"
+                     /standard_name="similar to pSC101"
+     misc_difference 257..259
+                     /note="pSC101"
+                     /standard_name="pSC101"
+     misc_difference 533
+                     /note="pSC101"
+                     /replace="t"
+                     /standard_name="pSC101"
+     misc_difference 623
+                     /note="pSC101"
+                     /replace="g"
+                     /standard_name="pSC101"
+     gene            complement(699..1649)
+                     /gene="rep"
+                     /note="pLG339 replication protein"
+                     /standard_name="rep"
+     CDS             complement(699..1649)
+                     /codon_start=1
+                     /gene="rep"
+                     /product="replication initiation protein"
+                     /protein_id="AAB81042.1"
+                     /transl_table=11
+                     /translation="MSELVVFKANELAISRYDLTEHETKLILCCVALLNPTIENPTRK
+                     ERTVSFTYNQYAQMMNISRENAYGVLAKATRELMTRTVEIRNPLVKGFEIFQWTNYAK
+                     FSSEKLELVFSEEILPYLFQLKKFIKYNLEHVKSFENKYSMRIYEWLLKELTQKKTHK
+                     ANIEISLDEFKFMLMLENNYHEFKRLNQWVLKPISKDLNTYSNMKLVVDKRGRPTDTL
+                     IFQVELDRQMDLVTELENNQIKMNGDKIPTTITSDSYLHNGLRKTLHDALTAKIQLTS
+                     FEAKFLSDMQSKYDLNGSFSWLTQKQRTTLENILAKYGRI*"
+                     /standard_name="rep"
+     misc_difference 785
+                     /note="pSC101"
+                     /replace="c"
+                     /standard_name="pSC101"
+     misc_difference 880
+                     /note="pSC101"
+                     /replace="g"
+                     /standard_name="pSC101"
+     misc_feature    984..1646
+                     /db_xref="CDD:395835"
+                     /gene="rep"
+                     /note="Initiator Replication protein; Region: Rep_3;
+                     pfam01051"
+                     /standard_name="miscellaneous"
+     misc_difference 2426
+                     /note="pSC101"
+                     /replace="c"
+                     /standard_name="pSC101"
+     misc_difference 2615
+                     /note="pSC101"
+                     /standard_name="pSC101"
+     primer_bind     2833..2852
+                     /standard_name="pGCMT1 seq F"
+     primer_bind     complement(2885..2910)
+                     /standard_name="pSC101 Reverse"
+     primer_bind     2992..3017
+                     /standard_name="xylE forward"
+     misc_feature    3035..3038
+                     /note="Geneious type: RBS"
+                     /standard_name="RBS"
+     CDS             3046..3969
+                     /codon_start=1
+                     /transl_table=1
+                     /translation="MNKGVMRPGHVQLRVLDMSKALEHYVELLGLIEMDRDDQGRVYL
+                     KAWTEVDKFSLVLREADEPGMDFMGFKVVDEDALRQLERDLMAYGCAVEQLPAGELNS
+                     CGRRVRFQAPSGHHFELYADKEYTGKWGLNDVNPEAWPRDLKGMAAVRFDHALMYGDE
+                     LPATYDLFTKVLGFYLAEQVLDENGTRVAQFLSLSTKAHDVAFIHHPEKGRLHHVSFH
+                     LETWEDLLRAADLISMTDTSIDIGPTRHGLTHGKTIYFFDPSGNRNEVFCGGDYNYPD
+                     HKPVTWTTDQLGKAIFYHDRILNERFMTVLT*"
+                     /standard_name="xylE"
+     primer_bind     complement(3056..3075)
+                     /standard_name="pGCMT1 seq R"
+     primer_bind     complement(3972..4005)
+                     /standard_name="xylE Reverse"
+     source          3995..4024
+                     /country="United Kingdom:Birmingham"
+                     /db_xref="taxon:35419"
+                     /isolate="RK2"
+                     /mol_type="genomic DNA"
+                     /organism="Birmingham IncP-alpha plasmid"
+                     /plasmid="Birmingham IncP-alpha plasmid"
+     misc_feature    3995..4024
+                     /note="bi-directional"
+                     /standard_name="bi-directional"
+     primer_bind     4007..4045
+                     /standard_name="aph Reverse"
+     CDS             complement(4070..4885)
+                     /codon_start=1
+                     /gene="<i>aph(3')-Ia</i>"
+                     /note="confers resistance to kanamycin in bacteria or G418
+                     (Geneticin®) in eukaryotes"
+                     /product="aminoglycoside phosphotransferase"
+                     /transl_table=1
+                     /translation="MSHIQRETSCSRPRLNSNMDADLYGYKWARDNVGQSGATIYRLY
+                     GKPDAPELFLKHGKGSVANDVTDEMVRLNWLTEFMPLPTIKHFIRTPDDAWLLTTAIP
+                     GKTAFQVLEEYPDSGENIVDALAVFLRRLHSIPVCNCPFNSDRVFRLAQAQSRMNNGL
+                     VDASDFDDERNGWPVEQVWKEMHKLLPFSPDSVVTHGDFSLDNLIFDEGKLIGCIDVG
+                     RVGIADRYQDLAILWNCLGEFSPSLQKRLFQKYGIDNPDMNKLQFHLMLDEFF*"
+                     /standard_name="KanR"
+     primer_bind     complement(4978..11)
+                     /standard_name="aph Forward"
+     primer_bind     4988..25
+                     /standard_name="pSC101 Forward"
+ORIGIN      
+        1 gccactttca gtatggattt gggtgttacg ggggggggtt ggtgcttaaa atcgcgctga
+       61 ggatttctga tggtgttaag cgggcggttt tgagatgtaa actcgcccgt ttaacataat
+      121 ggatcttgcg cgcaccgccc gaacaccact cgccacaaaa aaccgccgga acgtccaaaa
+      181 gtacgggttt tgctgcccgc aaacgggctg ttctggtgtt gctagtttgt tatcagaatc
+      241 gcagatccgg cttcagccgg tttgccggct gaaagcgcta tttcttccag aattgccatg
+      301 attttttccc cacgggaggc gtcactggct cccgtgttgt cggcagcttt gattcgataa
+      361 gcagcatcgc ctgtttcagg ctgtctatgt gtgactgttg agctgtaaca agttgtctca
+      421 ggtgttcaat ttcatgttct agttgctttg ttttactggt ttcacctgtt ctattaggtg
+      481 ttacatgctg ttcatctgtt acattgtcga tctgttcatg gtgaacagct ttgaatgcac
+      541 caaaaactcg taaaagctct gatgtatcta tcttttttac accgttttca tctgtgcata
+      601 tggacagttt tccctttgat atgtaacggt gaacagttgt tctacttttg tttgttagtc
+      661 ttgatgcttc actgatagat acaagagcca taagaacctc agatccttcc gtatttagcc
+      721 agtatgttct ctagtgtggt tcgttgtttt tgcgtgagcc atgagaacga accattgaga
+      781 tcatacttac tttgcatgtc actcaaaaat tttgcctcaa aactggtgag ctgaattttt
+      841 gcagttaaag catcgtgtag tgtttttctt agtccgttat gtaggtagga atctgatgta
+      901 atggttgttg gtattttgtc accattcatt tttatctggt tgttctcaag ttcggttacg
+      961 agatccattt gtctatctag ttcaacttgg aaaatcaacg tatcagtcgg gcggcctcgc
+     1021 ttatcaacca ccaatttcat attgctgtaa gtgtttaaat ctttacttat tggtttcaaa
+     1081 acccattggt taagcctttt aaactcatgg tagttatttt caagcattaa catgaactta
+     1141 aattcatcaa ggctaatctc tatatttgcc ttgtgagttt tcttttgtgt tagttctttt
+     1201 aataaccact cataaatcct catagagtat ttgttttcaa aagacttaac atgttccaga
+     1261 ttatatttta tgaatttttt taactggaaa agataaggca atatctcttc actaaaaact
+     1321 aattctaatt tttcgcttga gaacttggca tagtttgtcc actggaaaat ctcaaagcct
+     1381 ttaaccaaag gattcctgat ttccacagtt ctcgtcatca gctctctggt tgctttagct
+     1441 aatacaccat aagcattttc cctactgatg ttcatcatct gagcgtattg gttataagtg
+     1501 aacgataccg tccgttcttt ccttgtaggg ttttcaatcg tggggttgag tagtgccaca
+     1561 cagcataaaa ttagcttggt ttcatgctcc gttaagtcat agcgactaat cgctagttca
+     1621 tttgctttga aaacaactaa ttcagacata catctcaatt ggtctaggtg attttaatca
+     1681 ctataccaat tgagatgggc tagtcaatga taattactag tccttttcct ttgagttgtg
+     1741 ggtatctgta aattctgcta gacctttgct ggaaaacttg taaattctgc tagaccctct
+     1801 gtaaattccg ctagaccttt gtgtgttttt tttgtttata ttcaagtggt tataatttat
+     1861 agaataaaga aagaataaaa aaagataaaa agaatagatc ccagccctgt gtataactca
+     1921 ctactttagt cagttccgca gtattacaaa aggatgtcgc aaacgctgtt tgctcctcta
+     1981 caaaacagac cttaaaaccc taaaggctta agtagcaccc tcgcaagctc gggcaaatcg
+     2041 ctgaatattc cttttgtctc cgaccatcag gcacctgagt cgctgtcttt ttcgtgacat
+     2101 tcagttcgct gcgctcacgg ctctggcagt gaatgggggt aaatggcact acaggcgcct
+     2161 tttatggatt catgcaagga aactacccat aatacaagaa aagcccgtca cgggcttctc
+     2221 agggcgtttt atggcgggtc tgcggagtgg tgaatccgtt agcgaggtgc cgccggcttc
+     2281 cattcaggtc gaggtggccc ggctccatgc accgcgacgc aacgcgggga ggcagacaag
+     2341 gtatagggcg gcgcctacaa tccatgccaa cccgttccat gtgctcgccg aggcggcata
+     2401 aatcgccgtg acgatcagcg gtccaatgat cgaagttagg ctggtaagag ccgcgagcga
+     2461 tccttgaagc tgtccctgat ggtcgtcatc tacctgcctg gacagcatgg cctgcaacgc
+     2521 gggcatcccg atgccgccgg aagcgagaag aatcataatg gggaaggcca tccagcctcg
+     2581 cgtcgcgaac gccagcaaga cgtagcccag cgcgtcggcc gccatgccgg cgataatggc
+     2641 ctgcttctcg ccgaaacgtt tggtggcggg accagtgacg aaggcttgag cgagggcgtg
+     2701 caagattccg aataccgcaa gcgacaggcc gatcatcgtc gcgctccagc gaaagcggtc
+     2761 ctcgccgaaa atgacccaga gcgctgccgg caccctgtcc tacgagttgc atgataaaga
+     2821 agacagtcat aagtgcggcg acgatagtca tgccccgcgc ccaccggaag gagctgactg
+     2881 ggttgaaggc tctcaagggc atcgtctaga tttagccgct aaaggcccgg ccggcttccc
+     2941 ttgacagcat cgccatttct gacgatgctg gccaagtccc gatttactcc aggaattcgt
+     3001 tggcggaaac aaacctgaca acatgaacta tgaagaggtg acgtcatgaa caaaggtgta
+     3061 atgcgaccgg gccatgtgca gctgcgtgta ctggacatga gcaaggccct ggaacactac
+     3121 gtcgagttgc tgggcctgat cgagatggac cgtgacgacc agggccgtgt ctatctgaag
+     3181 gcttggaccg aagtggataa gttttccctg gtgctacgcg aggctgacga gccgggcatg
+     3241 gattttatgg gtttcaaggt tgtggatgag gatgctctcc ggcaactgga gcgggatctg
+     3301 atggcatatg gctgtgccgt tgagcagcta cccgcaggtg aactgaacag ttgtggccgg
+     3361 cgcgtgcgct tccaggcccc ctccgggcat cacttcgagt tgtatgcaga caaggaatat
+     3421 actggaaagt ggggtttgaa tgacgtcaat cccgaggcat ggccgcgcga tctgaaaggt
+     3481 atggcggctg tgcgtttcga ccacgccctc atgtatggcg acgaattgcc ggcgacctat
+     3541 gacctgttca ccaaggtgct cggtttctat ctggccgaac aggtgctgga cgaaaatggc
+     3601 acgcgcgtcg cccagtttct cagtctgtcg accaaggccc acgacgtggc cttcattcac
+     3661 catccggaaa aaggccgcct ccatcatgtg tccttccacc tcgaaacctg ggaagacttg
+     3721 cttcgcgccg ccgacctgat ctccatgacc gacacatcta tcgatatcgg cccaacccgc
+     3781 cacggcctca ctcacggcaa gaccatctac ttcttcgacc cgtccggtaa ccgcaacgaa
+     3841 gtgttctgcg ggggagatta caactacccg gaccacaaac cggtgacctg gaccaccgac
+     3901 cagctgggca aggcgatctt ttaccacgac cgcattctca acgaacgatt catgaccgtg
+     3961 ctgacctgat ggtccggtac gacttattgc agagaaaaag cccggcgttg ccgggcttgt
+     4021 ttttcagcgt aatgctctgc cagtgttaca accaattaac caattctgat tagaaaaact
+     4081 catccagcat caaatgaaac tgcaatttat tcatatcagg attatcaata ccatattttt
+     4141 gaaaaagccg tttctgtaat gaaggagaaa actcaccgag gcagttccat aggatggcaa
+     4201 gatcctggta tcggtctgcg attccgactc gtccaacatc aatacaacct attaatttcc
+     4261 cctcgtcaaa aataaggtta tcaagtgaga aatcaccatg agtgacgact gaatccggtg
+     4321 agaatggcaa aagcttatgc atttctttcc agacttgttc aacaggccag ccattacgct
+     4381 cgtcatcaaa atcactcgca tcaaccaaac cgttattcat tcgtgattgc gcctgagcga
+     4441 gacgaaatac gcgatcgctg ttaaaaggac aattacaaac aggaatcgaa tgcaaccggc
+     4501 gcaggaacac tgccagcgca tcaacaatat tttcacctga atcaggatat tcttctaata
+     4561 cctggaatgc tgttttcccg gggatcgcag tggtgagtaa ccatgcatca tcaggagtac
+     4621 ggataaaatg cttgatggtc ggaagaggca taaattccgt cagccagttt agtctgacca
+     4681 tctcatctgt aacatcattg gcaacgctac ctttgccatg tttcagaaac aactctggcg
+     4741 catcgggctt cccatacaat cgatagattg tcgcacctga ttgcccgaca ttatcgcgag
+     4801 cccatttata cccatataaa tcagcatcca tgttggaatt taatcgcggc ctcgagcaag
+     4861 acgtttcccg ttgaatatgg ctcataacac cccttgtatt actgtttatg taagcagaca
+     4921 gttttattgt tcatgatgat atatttttat cttgtgcaat gtaacatcag agattttgag
+     4981 acacaacgtg gctttgttg
+//

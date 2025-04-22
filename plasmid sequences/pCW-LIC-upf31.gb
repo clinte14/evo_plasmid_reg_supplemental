@@ -1,0 +1,299 @@
+LOCUS       pCW-LIC-upf31           5655 bp    DNA     circular UNA 25-AUG-2023
+DEFINITION  Ligation of 2 sequences.
+ACCESSION   urn.local...25-ckk5e6d
+VERSION     urn.local...25-ckk5e6d
+KEYWORDS    .
+SOURCE      
+  ORGANISM  .
+FEATURES             Location/Qualifiers
+     rep_origin      1..589
+     primer_bind     490..509
+                     /note="pBR322 origin, forward primer"
+                     /standard_name="pBR322ori-F"
+     primer_bind     743..760
+                     /note="L4440 vector, forward primer"
+                     /standard_name="L4440"
+     misc_feature    775..916
+                     /note="basis of mobility region from pBR322"
+                     /standard_name="bom"
+     primer_bind     complement(842..861)
+                     /note="pRS vectors, use to sequence yeast selectable 
+                     marker"
+                     /standard_name="pRS-marker"
+     primer_bind     1002..1024
+                     /note="pGEX vectors, reverse primer"
+                     /standard_name="pGEX 3'"
+     CDS             complement(1037..1498)
+                     /codon_start=1
+                     /gene="lacZ fragment"
+                     /product="LacZ-alpha fragment of beta-galactosidase"
+                     /translation="MTMITDSLAVVLQRRDWENPGVTQLNRLAAHPPFASWRNSEEAR
+                     TDRPSQQLRSLNGEWRFAWFPAPEAVPESWLECDLPEADTVVVPSNWQMHGYDAPIYT
+                     NVTYPITVNPPFVPTENPTGCYSLTFNVDESWLQEGQTRIIFDGVLPRAFR"
+                     /standard_name="lacZ-alpha"
+     primer_bind     1447..1469
+                     /note="In lacZ gene"
+                     /standard_name="M13/pUC Forward"
+     primer_bind     1461..1478
+                     /note="In lacZ gene. Also called M13-F20 or M13 (-21) 
+                     Forward"
+                     /standard_name="M13 Forward"
+     primer_bind     1462..1478
+                     /note="common sequencing primer, one of multiple similar 
+                     variants"
+                     /standard_name="M13 fwd"
+     primer_bind     complement(1494..1510)
+                     /note="common sequencing primer, one of multiple similar 
+                     variants"
+                     /standard_name="M13 rev"
+     primer_bind     complement(1494..1510)
+                     /note="In lacZ gene. Also called M13-rev"
+                     /standard_name="M13 Reverse"
+     protein_bind    1518..1534
+                     /bound_moiety="lac repressor encoded by lacI"
+                     /note="The lac repressor binds to the lac operator to 
+                     inhibit transcription in E. coli. This inhibition can be
+                     relieved by adding lactose or
+                     isopropyl-beta-D-thiogalactopyranoside (IPTG)."
+                     /standard_name="lac operator"
+     regulatory      complement(1542..1572)
+                     /note="Geneious type: promoter"
+                     /note="E. coli lac promoter with an ""up"" mutation"
+                     /standard_name="lac UV5 promoter"
+     CDS             complement(1621..2703)
+                     /codon_start=1
+                     /gene="lacI"
+                     /product="lac repressor"
+                     /note="The lac repressor binds to the lac operator to 
+                     inhibit transcription in E. coli. This inhibition can be
+                     relieved by adding lactose or
+                     isopropyl-beta-D-thiogalactopyranoside (IPTG)."
+                     /translation="MKPVTLYDVAEYAGVSYQTVSRVVNQASHVSAKTREKVEAAMAE
+                     LNYIPNRVAQQLAGKQSLLIGVATSSLALHAPSQIVAAIKSRADQLGASVVVSMVERS
+                     GVEACKAAVHNLLAQRVSGLIINYPLDDQDAIAVEAACTNVPALFLDVSDQTPINSII
+                     FSHEDGTRLGVEHLVALGHQQIALLAGPLSSVSARLRLAGWHKYLTRNQIQPIAEREG
+                     DWSAMSGFQQTMQMLNEGIVPTAMLVANDQMALGAMRAITESGLRVGADISVVGYDDT
+                     EDSSCYIPPLTTIKQDFRLLGQTSVDRLLQLSQGQAVKGNQLLPVSLVKRKTTLAPNT
+                     QTASPRALADSLMQLARQVSRLESGQ"
+                     /standard_name="lacI"
+     primer_bind     2665..2684
+                     /note="LacI, reverse primer"
+                     /standard_name="LacI-R"
+     regulatory      complement(2704..2781)
+                     /note="Geneious type: promoter"
+                     /gene="lacI (mutant)"
+                     /note="In the lacIq allele, a single base change in the 
+                     promoter boosts expression of the lacI gene about
+                     10-fold."
+                     /standard_name="lacIq promoter"
+     primer_bind     2748..2767
+                     /standard_name="pCW_LIC_upf31_gene_F"
+     regulatory      2869..2899
+                     /note="Geneious type: promoter"
+                     /note="E. coli lac promoter with an ""up"" mutation"
+                     /standard_name="lac UV5 promoter"
+     protein_bind    2907..2923
+                     /bound_moiety="lac repressor encoded by lacI"
+                     /note="The lac repressor binds to the lac operator to 
+                     inhibit transcription in E. coli. This inhibition can be
+                     relieved by adding lactose or
+                     isopropyl-beta-D-thiogalactopyranoside (IPTG)."
+                     /standard_name="lac operator"
+     regulatory      2978..3006
+                     /note="Geneious type: promoter"
+                     /note="strong E. coli promoter; hybrid between the trp and
+                      lac UV5 promoters"
+                     /standard_name="tac promoter"
+     protein_bind    3014..3030
+                     /bound_moiety="lac repressor encoded by lacI"
+                     /note="The lac repressor binds to the lac operator to 
+                     inhibit transcription in E. coli. This inhibition can be
+                     relieved by adding lactose or
+                     isopropyl-beta-D-thiogalactopyranoside (IPTG)."
+                     /standard_name="lac operator"
+     regulatory      3073..3101
+                     /note="Geneious type: promoter"
+                     /note="strong E. coli promoter; hybrid between the trp and
+                      lac UV5 promoters"
+                     /standard_name="tac promoter"
+     protein_bind    3109..3125
+                     /bound_moiety="lac repressor encoded by lacI"
+                     /note="The lac repressor binds to the lac operator to 
+                     inhibit transcription in E. coli. This inhibition can be
+                     relieved by adding lactose or
+                     isopropyl-beta-D-thiogalactopyranoside (IPTG)."
+                     /standard_name="lac operator"
+     unsure          3158..3163
+     misc_feature    3167..3865
+                     /note="Geneious type: Concatenated sequence"
+                     /standard_name="Digested upf amplicon (concatenated
+                     sequence 2)"
+     misc_feature    3167..3168
+                     /note="Geneious type: ligation"
+                     /standard_name="Ligation"
+     repeat_region   <3171..>3860
+                     /standard_name
+     primer_bind     3171..3190
+                     /standard_name="upf31_RBS_for_pJET_F"
+     primer_bind     3171..3190
+                     /standard_name="NdeI_upf31_v2"
+     CDS             3186..3860
+                     /note="Geneious type: cds"
+                     /gene="upf31.0"
+                     /locus_tag="ST520_p13"
+                     /old_locus_tag="pBP136_p34"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="Upf31.0"
+                     /protein_id="YP_787954.1"
+                     /db_xref="GI:116006770; GeneID:4364107"
+                     /standard_name="upf31.0 CDS"
+     misc_feature    complement(3248..3267)
+                     /note="Geneious type: primer_bind_reverse"
+                     /standard_name="upf31_ko_up_R"
+     misc_feature    3788..3806
+                     /note="Geneious type: primer_bind_reverse"
+                     /standard_name="upf31_ko_down_F"
+     misc_feature    complement(3843..3860)
+                     /note="Geneious type: primer_bind_reverse"
+                     /standard_name="upf31_RBS_for_pJET_R"
+     primer_bind     complement(3843..3860)
+                     /standard_name="HindIII_upf31_v2"
+     misc_feature    3862..3168
+                     /note="Geneious type: Concatenated sequence"
+                     /standard_name="Linerized Plasmid (concatenated sequence
+                     1)"
+     misc_feature    3862..3865
+                     /note="Geneious type: ligation"
+                     /standard_name="Ligation"
+     misc_feature    complement(3951..3970)
+                     /note="Geneious type: primer_bind_reverse"
+                     /standard_name="pCW_LIC_upf31_gene_R"
+     primer_bind     complement(3952..3970)
+                     /note="pBR322 vectors, upsteam of EcoRI site, forward 
+                     primer"
+                     /standard_name="pBRforEco"
+     rep_origin      4032..4487
+     primer_bind     complement(4119..4138)
+                     /note="F1 origin, reverse primer"
+                     /standard_name="F1ori-R"
+     primer_bind     4329..4350
+                     /note="F1 origin, forward primer"
+                     /standard_name="F1ori-F"
+     regulatory      4520..4624
+                     /note="Geneious type: promoter"
+                     /gene="bla"
+                     /standard_name="AmpR promoter"
+     CDS             4625..5485
+                     /codon_start=1
+                     /gene="bla"
+                     /product="beta-lactamase"
+                     /note="confers resistance to ampicillin, carbenicillin,
+                     and related antibiotics"
+                     /translation="MSIQHFRVALIPFFAAFCLPVFAHPETLVKVKDAEDQLGARVGY
+                     IELDLNSGKILESFRPEERFPMMSTFKVLLCGAVLSRVDAGQEQLGRRIHYSQNDLVE
+                     YSPVTEKHLTDGMTVRELCSAAITMSDNTAANLLLTTIGGPKELTAFLHNMGDHVTRL
+                     DRWEPELNEAIPNDERDTTMPAAMATTLRKLLTGELLTLASRQQLIDWMEADKVAGPL
+                     LRSALPAGWFIADKSGAGERGSRGIIAALGPDGKPSRIVVIYTTGSQATMDERNRQIA
+                     EIGASLIKHW"
+                     /standard_name="AmpR"
+     primer_bind     complement(4843..4862)
+                     /note="Ampicillin resistance gene, reverse primer"
+                     /standard_name="Amp-R"
+ORIGIN      
+        1 ttgagatcct ttttttctgc gcgtaatctg ctgcttgcaa acaaaaaaac caccgctacc
+       61 agcggtggtt tgtttgccgg atcaagagct accaactctt tttccgaagg taactggctt
+      121 cagcagagcg cagataccaa atactgtcct tctagtgtag ccgtagttag gccaccactt
+      181 caagaactct gtagcaccgc ctacatacct cgctctgcta atcctgttac cagtggctgc
+      241 tgccagtggc gataagtcgt gtcttaccgg gttggactca agacgatagt taccggataa
+      301 ggcgcagcgg tcgggctgaa cggggggttc gtgcacacag cccagcttgg agcgaacgac
+      361 ctacaccgaa ctgagatacc tacagcgtga gctatgagaa agcgccacgc ttcccgaagg
+      421 gagaaaggcg gacaggtatc cggtaagcgg cagggtcgga acaggagagc gcacgaggga
+      481 gcttccaggg ggaaacgcct ggtatcttta tagtcctgtc gggtttcgcc acctctgact
+      541 tgagcgtcga tttttgtgat gctcgtcagg ggggcggagc ctatggaaaa acgccagcaa
+      601 cgcggccttt ttacggttcc tggccttttg ctggcctttt gctcacatgt tctttcctgc
+      661 gttatcccct gattctgtgg ataaccgtat taccgccttt gagtgagctg ataccgctcg
+      721 ccgcagccga acgaccgagc gcagcgagtc agtgagcgag gaagcggaag agcgcctgat
+      781 gcggtatttt ctccttacgc atctgtgcgg tatttcacac cgcataatgg tgcactctca
+      841 gtacaatctg ctctgatgcc gcatagttaa gccagtatac actccgctat cgctacgtga
+      901 ctgggtcatg gctgcgcccc gacacccgcc aacacccgct gacgcgccct gacgggcttg
+      961 tctgctcccg gcatccgctt acagacaagc tgtgaccgtc tccgggagct gcatgtgtca
+     1021 gaggttttca ccgtcatcac cgaaacgcgc gaggcagaac gccatcaaaa ataattcgcg
+     1081 tctggccttc ctgtagccag ctttcatcaa cattaaatgt gagcgagtaa caacccgtcg
+     1141 gattctccgt gggaacaaac ggcggattga ccgtaatggg ataggtcacg ttggtgtaga
+     1201 tgggcgcatc gtaaccgtgc atctgccagt ttgaggggac gacgacagta tcggcctcag
+     1261 gaagatcgca ctccagccag ctttccggca ccgcttctgg tgccggaaac caggcaaagc
+     1321 gccattcgcc attcaggctg cgcaactgtt gggaagggcg atcggtgcgg gcctcttcgc
+     1381 tattacgcca gctggcgaaa gggggatgtg ctgcaaggcg attaagttgg gtaacgccag
+     1441 ggttttccca gtcacgacgt tgtaaaacga cggccagtga atccgtaatc atggtcatag
+     1501 ctgtttcctg tgtgaaattg ttatccgctc acaattccac acattatacg agccggaagc
+     1561 ataaagtgta aagcctgggg tgcctaatga gtgagctaac ttacattaat tgcgttgcgc
+     1621 tcactgcccg ctttccagtc gggaaacctg tcgtgccagc tgcattaatg aatcggccaa
+     1681 cgcgcgggga gaggcggttt gcgtattggg cgccagggtg gtttttcttt tcaccagtga
+     1741 gacgggcaac agctgattgc ccttcaccgc ctggccctga gagagttgca gcaagcggtc
+     1801 cacgctggtt tgccccagca ggcgaaaatc ctgtttgatg gtggttaacg gcgggatata
+     1861 acatgagctg tcttcggtat cgtcgtatcc cactaccgag atatccgcac caacgcgcag
+     1921 cccggactcg gtaatggcgc gcattgcgcc cagcgccatc tgatcgttgg caaccagcat
+     1981 cgcagtggga acgatgccct cattcagcat ttgcatggtt tgttgaaaac cggacatggc
+     2041 actccagtcg ccttcccgtt ccgctatcgg ctgaatttga ttgcgagtga gatatttatg
+     2101 ccagccagcc agacgcagac gcgccgagac agaacttaat gggcccgcta acagcgcgat
+     2161 ttgctggtga cccaatgcga ccagatgctc cacgcccagt cgcgtaccgt cttcatggga
+     2221 gaaaataata ctgttgatgg gtgtctggtc agagacatca agaaataacg ccggaacatt
+     2281 agtgcaggca gcttccacag caatggcatc ctggtcatcc agcggatagt taatgatcag
+     2341 cccactgacg cgttgcgcga gaagattgtg caccgccgct ttacaggctt cgacgccgct
+     2401 tcgttctacc atcgacacca ccacgctggc acccagttga tcggcgcgag atttaatcgc
+     2461 cgcgacaatt tgcgacggcg cgtgcagggc cagactggag gtggcaacgc caatcagcaa
+     2521 cgactgtttg cccgccagtt gttgtgccac gcggttggga atgtaattca gctccgccat
+     2581 cgccgcttcc actttttccc gcgttttcgc agaaacgtgg ctggcctggt tcaccacgcg
+     2641 ggaaacggtc tgataagaga caccggcata ctctgcgaca tcgtataacg ttactggttt
+     2701 cacattcacc accctgaatt gactctcttc cgggcgctat catgccatac cgcgaaaggt
+     2761 tttgcaccat tcgatggtgt cctggcacga caggtttccc gactggaaag cgggcagtga
+     2821 gcgcaacgca attaatgtaa gttagctcac tcattaggca ccccaggctt tacactttat
+     2881 gcttccggct cgtataatgt gtggaattgt gagcggataa caatttcaca caggaaacag
+     2941 gatcgatcca tcgatgagct tactccccat ccccctgttg acaattaatc atcggctcgt
+     3001 ataatgtgtg gaattgtgag cggataacaa tttcacacag gaaacaggat cagcttactc
+     3061 cccatccccc tgttgacaat taatcatcgg ctcgtataat gtgtggaatt gtgagcggat
+     3121 aacaatttca cacaggaaac aggatccatc gatgcttagg aggtcatatg tccaggaaga
+     3181 aggccatgag ataccccggc ggcaagggcg gtgccggtgt ctaccagacg atcatcaaca
+     3241 acatcccgcc tcacgacacg tacatcgaaa cgcacttggg cggcggtaac atcctggagc
+     3301 gcaagcgccc cgctgcccgc agcatcggta ttgacattga tcccgaagtg atcgaggttt
+     3361 ggcggcagct cgacgtgccc ggcctggagc tgtaccacgg cgacgccgtg gattggttgg
+     3421 agtcccacca gttcaccggc tccgagttcg tctatgccga tccgccctac gtgatggaca
+     3481 gtcggcgcgg cggcaagctg taccgctacg aatacgacga cgccgaccac gtgcggctgc
+     3541 tcgatgtgct ggcccgcttg ccgtgcgcgg tgatggtgtc gggctacagc tcaacgatct
+     3601 atgacagctc tcccttggcg tcatggagaa ccatcgactt caacgcgatg acgcgcggcg
+     3661 gcatcgctat cgaacggctg tggatgaact accccgagcc agccaagctg cacgatttgc
+     3721 gctacctcgg cagcaacttt cgtgagcgcg agcgcatcaa gcggaagaaa gcccgctggc
+     3781 aagcgaaaat cgccaagctc gatccgctgg agcgggcggc gatcatggaa tgcctgcgcg
+     3841 agctagaggc ggccgagtag aagcttatcg ctgataagct gtcaaacatg agcagatctg
+     3901 agcccgccta atgagcgggc ttttttttca gatctgcttg aagacgaaag ggcctcgtga
+     3961 tacgcctatt tttataggtt aatgtcatga taataatggt ttcttagacg atgcgtcaaa
+     4021 gcaaccatag tacgcgccct gtagcggcgc attaagcgcg gcgggtgtgg tggttacgcg
+     4081 cagcgtgacc gctacacttg ccagcgccct agcgcccgct cctttcgctt tcttcccttc
+     4141 ctttctcgcc acgttcgccg gctttccccg tcaagctcta aatcgggggc tccctttagg
+     4201 gttccgattt agagctttac ggcacctcga ccccaaaaaa cttgatttgg gtgatggttc
+     4261 acgtagtggg ccatcgccct gatagacggt ttttcgccct ttgacgttgg agtccacgtt
+     4321 ctttaatagt ggactcttgt tccaaactgg aacaacactc aaccctatct cgggctattc
+     4381 ttttgattta taagggattt tgccgatttc ggcctattgg ttaaaaaatg agctgattta
+     4441 acaaaaattt aacgcgaatt ttaacaaaat attaacgttt acaatttcat cgtcaggtgg
+     4501 cacttttcgg ggaaatgtgc gcggaacccc tatttgttta tttttctaaa tacattcaaa
+     4561 tatgtatccg ctcatgagac aataaccctg ataaatgctt caataatatt gaaaaaggaa
+     4621 gagtatgagt attcaacatt tccgtgtcgc ccttattccc ttttttgcgg cattttgcct
+     4681 tcctgttttt gctcacccag aaacgctggt gaaagtaaaa gatgctgaag atcagttggg
+     4741 tgcacgagtg ggttacatcg aactggatct caacagcggt aagatccttg agagttttcg
+     4801 ccccgaagaa cgttttccaa tgatgagcac ttttaaagtt ctgctatgtg gcgcggtatt
+     4861 atcccgtgtt gacgccgggc aagagcaact cggtcgccgc atacactatt ctcagaatga
+     4921 cttggttgag tactcaccag tcacagaaaa gcatcttacg gatggcatga cagtaagaga
+     4981 attatgcagt gctgccataa ccatgagtga taacactgcg gccaacttac ttctgacaac
+     5041 gatcggagga ccgaaggagc taaccgcttt tttgcacaac atgggggatc atgtaactcg
+     5101 ccttgatcgt tgggaaccgg agctgaatga agccatacca aacgacgagc gtgacaccac
+     5161 gatgcctgca gcaatggcaa caacgttgcg caaactatta actggcgaac tacttactct
+     5221 agcttcccgg caacaattaa tagactggat ggaggcggat aaagttgcag gaccacttct
+     5281 gcgctcggcc cttccggctg gctggtttat tgctgataaa tctggagccg gtgagcgtgg
+     5341 gtctcgcggt atcattgcag cactggggcc agatggtaag ccctcccgta tcgtagttat
+     5401 ctacacgacg gggagtcagg caactatgga tgaacgaaat agacagatcg ctgagatagg
+     5461 tgcctcactg attaagcatt ggtaactgtc agaccaagtt tactcatata tactttagat
+     5521 tgatttaaaa cttcattttt aatttaaaag gatctaggtg aagatccttt ttgataatct
+     5581 catgaccaaa atcccttaac gtgagttttc gttccactga gcgtcagacc ccgtagaaaa
+     5641 gatcaaagga tcttc
+//

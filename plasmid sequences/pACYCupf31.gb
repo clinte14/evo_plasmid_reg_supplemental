@@ -1,0 +1,161 @@
+LOCUS       pACYCupf31              4357 bp    DNA     circular UNA 31-JAN-2024
+DEFINITION  Cloning vector pACYC184.
+ACCESSION   X06403
+KEYWORDS    .
+SOURCE      
+  ORGANISM  .
+FEATURES             Location/Qualifiers
+     source          1..4357
+                     /db_xref="taxon:32630"
+                     /mol_type="other DNA"
+                     /organism="synthetic construct"
+                     /plasmid="pACYC184"
+     misc_feature    443..583
+                     /note="part of IS1 from Tn9"
+                     /standard_name="part of IS1 from Tn9"
+     rep_origin      581..1493
+     misc_difference 944..946
+                     /note="conflict"
+                     /replace="tc"
+                     /standard_name="conflict"
+     misc_feature    1495..3388
+                     /note="pSC101 fragment"
+                     /standard_name="pSC101 fragment"
+     regulatory      1505..1510
+                     /note="Geneious type: promoter"
+                     /standard_name="-35"
+     primer_bind     1524..1545
+                     /standard_name="Upf31 Forward short"
+     regulatory      1528..1529
+                     /note="Geneious type: promoter"
+                     /standard_name="-10"
+     CDS             1572..2246
+                     /codon_start=1
+                     /product="Upf31"
+                     /transl_table=1
+                     /translation="MRYPGGKGGAGVYQTIINNIPPHDTYIETHLGGGNILERKRPAA
+                     RSVGIDVDPEVIEVWQQLDVPGLELHHGDAVAWLESHQFTGSEFVYADPPYVMDSRRG
+                     GKLYRHEYDDADHVRLLDVLAGLPCAVMVSGYSSTIYDSSPLASWRTIDFNAMTRGGI
+                     AIERLWMNYPEPAKLHDLRYLGSNFRERERIKRKKARWQAKIAKLDPLERAAIMECLR
+                     ELEAAE*"
+                     /standard_name="upf31"
+     primer_bind     complement(2088..2108)
+                     /standard_name="Upf31 Y180A R"
+     primer_bind     complement(2105..2123)
+                     /standard_name="Upf31 F185A R"
+     primer_bind     2111..2130
+                     /standard_name="Upf31 Y180A F"
+     primer_bind     2127..2147
+                     /standard_name="Upf31 F185A F"
+     primer_bind     complement(2144..2162)
+                     /standard_name="Upf31 W198A R"
+     primer_bind     2165..2184
+                     /standard_name="Upf31 W198A F"
+     primer_bind     complement(2247..2266)
+                     /standard_name="Upf31 Reverse Short"
+     CDS             2258..2883
+                     /codon_start=1
+                     /transl_table=1
+                     /translation="RPMPLRAFNPVSSFRWARGMTIVAALMTVFFIMQLVGQVPAALW
+                     VIFGEDRFRWSATMIGLSLAVFGILHALAQAFVTGPATKRFGEKQAIIAGMAADALGY
+                     VLLAFATRGWMAFPIMILLASGGIGMPALQAMLSRQVDDDHQGQLQGSLAALTSLTSI
+                     TGPLIVTAIYAASASTWNGLAWIVGAALYLVCLPALRRGAWSRATST*"
+                     /standard_name="tetA"
+     repeat_region   2294..2386
+                     /standard_name="duplication"
+     primer_bind     complement(3357..3377)
+                     /standard_name="Delta 184 duplication R"
+     repeat_region   3388..3480
+                     /standard_name="duplication"
+     primer_bind     3512..3531
+                     /standard_name="Delta 184 duplication F"
+     primer_bind     3622..3643
+                     /standard_name="Delta 184 duplication F2"
+     misc_feature    3643..585
+                     /note="Tn9 HaeII fragment"
+                     /standard_name="Tn9 HaeII fragment"
+     CDS             complement(3917..219)
+                     /codon_start=1
+                     /note="chloramphenicol resistance gene"
+                     /transl_table=1
+                     /translation="MEKKITGYTTVDISQWHRKEHFEAFQSVAQCTYNQTVQLDITAF
+                     LKTVKKNKHKFYPAFIHILARLMNAHPEFRMAMKDGELVIWDSVHPCYTVFHEQTETF
+                     SSLWSEYHDDFRQFLHIYSQDVACYGENLAYFPKGFIENMFFVSANPWVSFTSFDLNV
+                     ANMDNFFAPVFTMGKYYTQGDKVLMPLAIQVHHAVCDGFHVGRMLNELQQYCDEWQGG
+                     A*"
+                     /standard_name="chloramphenicol resistance gene"
+ORIGIN      
+        1 gaattccgga tgagcattca tcaggcgggc aagaatgtga ataaaggccg gataaaactt
+       61 gtgcttattt ttctttacgg tctttaaaaa ggccgtaata tccagctgaa cggtctggtt
+      121 ataggtacat tgagcaactg actgaaatgc ctcaaaatgt tctttacgat gccattggga
+      181 tatatcaacg gtggtatatc cagtgatttt tttctccatt ttagcttcct tagctcctga
+      241 aaatctcgat aactcaaaaa atacgcccgg tagtgatctt atttcattat ggtgaaagtt
+      301 ggaacctctt acgtgccgat caacgtctca ttttcgccaa aagttggccc agggcttccc
+      361 ggtatcaaca gggacaccag gatttattta ttctgcgaag tgatcttccg tcacaggtat
+      421 ttattcggcg caaagtgcgt cgggtgatgc tgccaactta ctgatttagt gtatgatggt
+      481 gtttttgagg tgctccagtg gcttctgttt ctatcagctg tccctcctgt tcagctactg
+      541 acggggtggt gcgtaacggc aaaagcaccg ccggacatca gcgctagcgg agtgtatact
+      601 ggcttactat gttggcactg atgagggtgt cagtgaagtg cttcatgtgg caggagaaaa
+      661 aaggctgcac cggtgcgtca gcagaatatg tgatacagga tatattccgc ttcctcgctc
+      721 actgactcgc tacgctcggt cgttcgactg cggcgagcgg aaatggctta cgaacggggc
+      781 ggagatttcc tggaagatgc caggaagata cttaacaggg aagtgagagg gccgcggcaa
+      841 agccgttttt ccataggctc cgcccccctg acaagcatca cgaaatctga cgctcaaatc
+      901 agtggtggcg aaacccgaca ggactataaa gataccaggc gtttccccct ggcggctccc
+      961 tcgtgcgctc tcctgttcct gcctttcggt ttaccggtgt cattccgctg ttatggccgc
+     1021 gtttgtctca ttccacgcct gacactcagt tccgggtagg cagttcgctc caagctggac
+     1081 tgtatgcacg aaccccccgt tcagtccgac cgctgcgcct tatccggtaa ctatcgtctt
+     1141 gagtccaacc cggaaagaca tgcaaaagca ccactggcag cagccactgg taattgattt
+     1201 agaggagtta gtcttgaagt catgcgccgg ttaaggctaa actgaaagga caagttttgg
+     1261 tgactgcgct cctccaagcc agttacctcg gttcaaagag ttggtagctc agagaacctt
+     1321 cgaaaaaccg ccctgcaagg cggttttttc gttttcagag caagagatta cgcgcagacc
+     1381 aaaacgatct caagaagatc atcttattaa tcagataaaa tatttctaga tttcagtgca
+     1441 atttatctct tcaaatgtag cacctgaagt cagccccata cgatataagt tgtaattctc
+     1501 atgtttgaca gcttatcatc gataagcttt aatgcggtag ccaagtcccg atttactcca
+     1561 ggaagaaggc catgagatac cccggcggca agggcggtgc cggcgtctac cagacgatca
+     1621 tcaacaacat cccgcctcac gacacgtaca tcgaaacgca cctgggcggc ggcaacatcc
+     1681 tggagcgcaa gcggcccgct gcccgcagcg tcggcatcga cgttgatccc gaggtgatcg
+     1741 aggtctggca gcagctcgac gtgcccggcc tggagctgca ccacggcgac gccgtggcct
+     1801 ggctggagtc ccaccagttc accggctccg agttcgtcta cgccgatccg ccctacgtga
+     1861 tggacagccg gcgcggcggc aagctatacc gccacgaata cgacgacgcc gaccacgtgc
+     1921 ggctgctcga cgtgctggcc ggcttgccgt gcgcggtgat ggtgtcgggc tacagctcaa
+     1981 cgatctatga cagctctccc ttggcgtcat ggagaaccat cgacttcaac gcgatgacgc
+     2041 gcggcggcat cgctatcgaa cggctgtgga tgaactaccc cgagccagcc aagctgcacg
+     2101 atttgcgcta cctcggcagc aactttcgtg agcgcgagcg catcaagcgg aagaaagccc
+     2161 gctggcaagc gaaaatcgcc aagctcgatc cgctggagcg ggcggcgatc atggaatgcc
+     2221 tgcgcgagct agaggcggcc gagtaggtca cgcctgcgtc gaccgatgcc cttgagagcc
+     2281 ttcaacccag tcagctcctt ccggtgggcg cggggcatga ctatcgtcgc cgcacttatg
+     2341 actgtcttct ttatcatgca actcgtagga caggtgccgg cagcgctctg ggtcattttc
+     2401 ggcgaggacc gctttcgctg gagcgcgacg atgatcggcc tgtcgcttgc ggtattcgga
+     2461 atcttgcacg ccctcgctca agccttcgtc actggtcccg ccaccaaacg tttcggcgag
+     2521 aagcaggcca ttatcgccgg catggcggcc gacgcgctgg gctacgtctt gctggcgttc
+     2581 gcgacgcgag gctggatggc cttccccatt atgattcttc tcgcttccgg cggcatcggg
+     2641 atgcccgcgt tgcaggccat gctgtccagg caggtagatg acgaccatca gggacagctt
+     2701 caaggatcgc tcgcggctct taccagccta acttcgatca ctggaccgct gatcgtcacg
+     2761 gcgatttatg ccgcctcggc gagcacatgg aacgggttgg catggattgt aggcgccgcc
+     2821 ctataccttg tctgcctccc cgcgttgcgt cgcggtgcat ggagccgggc cacctcgacc
+     2881 tgaatggaag ccggcggcac ctcgctaacg gattcaccac tccaagaatt ggagccaatc
+     2941 aattcttgcg gagaactgtg aatgcgcaaa ccaacccttg gcagaacata tccatcgcgt
+     3001 ccgccatctc cagcagccgc acgcggcgca tctcgggcag cgttgggtcc tggccacggg
+     3061 tgcgcatgat cgtgctcctg tcgttgagga cccggctagg ctggcggggt tgccttactg
+     3121 gttagcagaa tgaatcaccg atacgcgagc gaacgtgaag cgactgctgc tgcaaaacgt
+     3181 ctgcgacctg agcaacaaca tgaatggtct tcggtttccg tgtttcgtaa agtctggaaa
+     3241 cgcggaagtc ccctacgtgc tgctgaagtt gcccgcaaca gagagtggaa ccaaccggtg
+     3301 ataccacgat actatgactg agagtcaacg ccatgagcgg cctcatttct tattctgagt
+     3361 tacaacagtc cgcaccgctg tccggtagct ccttccggtg ggcgcggggc atgactatcg
+     3421 tcgccgcact tatgactgtc ttctttatca tgcaactcgt aggacaggtg ccggcagcgc
+     3481 ccaacagtcc cccggccacg gggcctgcca ccatacccac gccgaaacaa gcgccctgca
+     3541 ccattatgtt ccggatctgc atcgcaggat gctgctggct accctgtgga acacctacat
+     3601 ctgtattaac gaagcgctaa ccgtttttat caggctctgg gaggcagaat aaatgatcat
+     3661 atcgtcaatt attacctcca cggggagagc ctgagcaaac tggcctcagg catttgagaa
+     3721 gcacacggtc acactgcttc cggtagtcaa taaaccggta aaccagcaat agacataagc
+     3781 ggctatttaa cgaccctgcc ctgaaccgac gaccgggtcg aatttgcttt cgaatttctg
+     3841 ccattcatcc gcttattatc acttattcag gcgtagcacc aggcgtttaa gggcaccaat
+     3901 aactgcctta aaaaaattac gccccgccct gccactcatc gcagtactgt tgtaattcat
+     3961 taagcattct gccgacatgg aagccatcac agacggcatg atgaacctga atcgccagcg
+     4021 gcatcagcac cttgtcgcct tgcgtataat atttgcccat ggtgaaaacg ggggcgaaga
+     4081 agttgtccat attggccacg tttaaatcaa aactggtgaa actcacccag ggattggctg
+     4141 agacgaaaaa catattctca ataaaccctt tagggaaata ggccaggttt tcaccgtaac
+     4201 acgccacatc ttgcgaatat atgtgtagaa actgccggaa atcgtcgtgg tattcactcc
+     4261 agagcgatga aaacgtttca gtttgctcat ggaaaacggt gtaacaaggg tgaacactat
+     4321 cccatatcac cagctcaccg tctttcattg ccatacg
+//
